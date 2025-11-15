@@ -344,11 +344,11 @@ nav {
 
 .btn::before {
     content: "✈";
-    display: inline-block;
+    display: inline;
 }
 
 .btn-primary {
-    background-color: #d63447;
+    background-color: #ff3333;
     color: white;
 }
 
@@ -359,9 +359,9 @@ nav {
 }
 
 .btn-secondary {
-    background-color: #d63447;
+    background-color: #ff3333;
     color: white;
-    border: 2px solid #d63447;
+    border: 2px solid #ff3333;
 }
 
 .btn-secondary:hover {
@@ -1031,3 +1031,4 @@ nav {
         font-size: 0.8rem;
     }
 }
+

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABC Travels, Logistics and Forwarding Nig. Ltd</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
@@ -50,15 +52,17 @@
                     <div class="service-icon">✈️</div>
                     <h3>Flight Booking</h3>
                     <p>Book local & international flights easily.</p>
-                    <button class="learn-more-btn">Learn More</button>
+                    <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Book
+                        Now</button>
                 </div>
+
 
                 <!-- Umrah Packages -->
                 <div class="service-card">
                     <div class="service-icon">✉️</div>
                     <h3>Umrah Packages</h3>
                     <p>Affordable and reliable Umrah travel services.</p>
-                    <button class="learn-more-btn">Learn More</button>
+                    <button class="learn-more-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
                 </div>
 
                 <!-- Hajj Packages -->
@@ -147,10 +151,12 @@
                 <div class="footer-logo"><img src="image/logo2.png" alt="ABC Travels Logo"></div>
                 <p>Your trusted partner for all travel and logistics needs in Nigeria and beyond.</p>
                 <div class="social-links">
-                    <a href="#">f</a>
-                    <a href="#">𝕏</a>
-                    <a href="#">📷</a>
-                    <a href="#">in</a>
+                    <a href="https://www.facebook.com/share/1BcU19gjDK/" target="_blank">f</a>
+                    <a href="https://x.com/amao60" target="_blank">𝕏</a>
+                    <a href="https://www.tiktok.com/@ni.ola1?_r=1&_t=ZM-91QMZhsUKTI" target="_blank"><img
+                            src="image/image.png" alt="TikTok" style="width: 20px; height: 20px;"></a>
+                    <a href="https://wa.me/2348027278858" target="_blank"><img src="image/whatsaap.jpg" alt="WhatsApp"
+                            style="width: 20px; height: 20px;"></a>
                 </div>
             </div>
 
@@ -169,7 +175,7 @@
                 <ul>
                     <li>📍 Oyo, Saki</li>
                     <li>📱 +234 802 727 8858</li>
-                    <li>✉️ adebaba@gmail.com</li>
+                    <li>✉️ adebaba27@gmail.com</li>
                 </ul>
             </div>
 
@@ -189,6 +195,68 @@
         </div>
     </footer>
 
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Make Payment</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container p-2 border rounded-3 text-center">
+                        <h5>Account Name : Abdul Raheem Adediran</h5>
+                        <h5>Account Number : 0051008342</h5>
+                        <h5>Bank Name : Stanbic bank ibtc</h5>
+                    </div>
+                    <small id="errorMessage" class="text-danger fw-semibold" style="display: none;">This input cannot be
+                        empty!</small>
+                    <input type="text" id="Input1" placeholder="Enter Your Full Name"
+                        class="form-control shadow-none form-control-sm my-2">
+                    <input type="text" id="Input2" placeholder="Enter the new item here"
+                        class="form-control shadow-none form-control-sm my-2">
+                    <input type="text" id="Input3" placeholder="Enter the new item here"
+                        class="form-control shadow-none form-control-sm my-2">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="closeModal()">Submit</button>
+                    <a href="https://wa.me/qr/M7FU7BVXGS4HH1" target="_blank" class="btn btn-primary">processing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Make Payment</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container p-2 border rounded-3 text-center">
+                        <h5>Account Name : Abdul Raheem Adediran</h5>
+                        <h5>Account Number : 0051008342</h5>
+                        <h5>Bank Name : Stanbic bank ibtc</h5>
+                    </div>
+                    <p id="display" class="text-danger fw-semibold" style="display: none;">This input cannot be
+                        empty!</p>
+                    <input type="text" id="details1" placeholder="Enter Your Full Name"
+                        class="form-control shadow-none form-control-sm my-2">
+                    <input type="text" id="details2" placeholder="Enter the new item here"
+                        class="form-control shadow-none form-control-sm my-2">
+                    <input type="text" id="details3" placeholder="Enter the new item here"
+                        class="form-control shadow-none form-control-sm my-2">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="umuraModal()">Submit</button>
+                    <a href="https://wa.me/qr/M7FU7BVXGS4HH1" target="_blank" class="btn btn-primary">processing</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         // Mobile menu toggle
         const navToggle = document.getElementById('navToggle');
@@ -206,7 +274,35 @@
                 navToggle.classList.remove('active');
             });
         });
+
+
+        const closeModal = () => {
+            if (Input1.value.trim() === '' || Input2.value.trim() === '' || Input3.value.trim() === '') {
+                errorMessage.style.display = 'block'
+            } else {
+                alert('Have you made the payment? if yes, click on the processing button to processed with your payment receipt')
+            }
+        }
+
+
+        const umuraModal = () => {
+            if (details1.value.trim() === '' || details2.value.trim() === '' || details3.value.trim() === '') {
+                display.style.display = 'block'
+            } else {
+                alert('Have you made the payment? if yes, click on the processing button to processed with your payment receipt')
+            } 
+            setTimeout(() =>{
+                display.style.display = 'block'
+            }),1000
+        }
+
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
